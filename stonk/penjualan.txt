@@ -1,0 +1,60 @@
+function Proses() {
+    //deklarasi variable
+    var tanggalPembelian;
+    var namaKonsumen;
+    var beras;
+    var gula;
+    var mie;
+    var telur;
+    var pembayaran;
+    var totalPembelian;
+    var dibayarkan;
+    var kembalian;
+    //deklarasi html
+    var txttanggalPembelian;
+    var txtnamaKonsumen;
+    var txtBeras;
+    var txtGula;
+    var txtMie;
+    var txtTelur;
+    var txtPembayaran;
+    var lblTanggalPembelian;
+    var lblNamaKonsumen;
+    var lblTotalPembelian;
+    var lblDibayarkan;
+    var lblKembalian;
+    //input dari textbox
+    txttanggalPembelian = document.getElementById("txt_tgl");
+    tanggalPembelian = txttanggalPembelian.value;
+    txtnamaKonsumen = document.getElementById("txt_nama");
+    namaKonsumen = txtnamaKonsumen.value;
+    txtBeras = document.getElementById("txt_beras");
+    beras = parseInt(txtBeras.value);
+    txtGula = document.getElementById("txt_gula");
+    gula = parseInt(txtGula.value);
+    txtMie = document.getElementById("txt_mie");
+    mie = parseInt(txtMie.value);
+    txtTelur = document.getElementById("txt_telur");
+    telur = parseInt(txtTelur.value);
+    txtPembayaran = document.getElementById("txt_pembayaran");
+    pembayaran = parseInt(txtPembayaran.value);
+    //Proses
+    //total pembelian
+    totalPembelian = ((beras * 12000) + (gula * 11000) + (mie * 2500) + (telur * 22000));
+    //dibayarkan
+    dibayarkan = pembayaran;
+    //kembalian
+    kembalian = pembayaran - totalPembelian;
+    //mengambil html elemen
+    lblTanggalPembelian = document.getElementById("lbl_tanggal");
+    lblNamaKonsumen = document.getElementById("lbl_konsumen");
+    lblTotalPembelian = document.getElementById("lbl_pembelian");
+    lblDibayarkan = document.getElementById("lbl_bayar");
+    lblKembalian = document.getElementById("lbl_kembalian");
+    //menampilkan nilai pada html element
+    lblTanggalPembelian.innerHTML = tanggalPembelian;
+    lblNamaKonsumen.innerHTML = namaKonsumen;
+    lblTotalPembelian.innerHTML = totalPembelian.toString();
+    lblDibayarkan.innerHTML = dibayarkan.toString();
+    lblKembalian.innerHTML = kembalian.toString();
+}

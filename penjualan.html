@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program Penjualan Pada XYZ</title>
+    <script src="penjualan.js"></script>
+    
+    <style type="text/css">
+    table {
+      border: 4px solid #c6c6c6;
+    }
+    </style>
+    
+</head>  
+
+<center>
+<table>
+
+<tr>
+    <th> <h2>Program Penjualan</h2> </th> 
+</tr>
+<tr>
+  
+    <td> <label>Tanggal Pembelian :</label>     </td>
+    <td><input type="date" id="txt_tgl" />  </td>
+</tr>
+
+<tr>
+    <td> <label>Nama konsumen :</label>       </td>
+    <td> <input type="text" id="txt_nama"/>   </td>
+</tr>
+
+<tr>
+    <th> <h3>Data Penjualan</h3> </th>
+</tr>
+
+<tr>
+    <td> <label>Beras (Rp. 12.000 / kg) :</label>   </td>
+    <td> <input type="number" id="txt_beras"/> </td>
+</tr>
+
+<tr>
+    <td> <label>Gula (Rp. 11.000 / kg) :</label>     </td>
+    <td> <input type="number" id="txt_gula"/>   </td>
+</tr>
+
+<tr>
+    <td> <label>Mie (Rp. 2.500 / bungkus) :</label>       </td>
+    <td> <input type="number" id="txt_mie"/>    </td>
+</tr>
+
+<tr>
+    <td> <label>Telur (Rp. 22.000 / kg) :</label>    </td>
+    <td> <input type="number" id="txt_telur"/>  </td>
+</tr>
+
+<tr>
+    <td> <label>Pembayaran :</label>                </td>
+    <td> <input type="number" id="txt_pembayaran"/> </td>
+</tr>
+
+    <th> <button onclick="Proses()">Proses</button> </th>
+
+<tr>
+    <td> <label>Tanggal : </label>          </td>
+    <td> <label id="lbl_tanggal"></label>   </td>
+</tr>
+
+<tr>
+    <td> <label>Nama Konsumen :</label>       </td>
+    <td> <label id="lbl_konsumen"></label>    </td>
+</tr>
+
+<tr>
+    <td> <label>Total Pembelian : Rp.</label>  </td>
+    <td> <label id="lbl_pembelian"></label>    </td>
+</tr>
+
+<tr>
+    <td> <label>Di bayarkan : Rp.</label>      </td>
+    <td> <label id="lbl_bayar"></label >       </td>
+</tr>
+
+<tr>
+    <td>  <label>Kembalian : Rp. </label>     </td>
+    <td> <label id="lbl_kembalian"></label>   </td>
+</tr>
+  
+
+</table>
+</center>
+</html>
